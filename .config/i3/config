@@ -229,7 +229,7 @@ client.focused_inactive		$inactive-accent-color	$inactive-bg-color	$inactive-tex
 client.urgent			$accent-color		$urgent-bg-color	$text-color		$inactive-bg-color	$inactive-accent-color
 
 # Screen lock
-bindsym $mod+shift+x exec sh ./.scripts/lock.sh
+bindsym $mod+shift+x exec sh ./.config/i3/lock.sh
 
 # Set wallpaper
 exec_always feh --bg-fill /home/joelsc/Pictures/Debian11_wallpaper.png

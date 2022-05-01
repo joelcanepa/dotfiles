@@ -19,7 +19,7 @@ ffmpeg -loglevel quiet -i /tmp/screen.png -filter_complex \
   -map "[blurred]" /tmp/screen_blur.png
 
 # Overlays an image of a lock
-ffmpeg -loglevel quiet -i /tmp/screen_blur.png -i ~/.scripts/lock.png -filter_complex "[1]scale=iw/1:-1[b];[0:v][b] overlay" /tmp/screen_final.png
+ffmpeg -loglevel quiet -i /tmp/screen_blur.png -i ~/.config/i3/assets/lock.png -filter_complex "[1]scale=iw/1:-1[b];[0:v][b] overlay" /tmp/screen_final.png
 
 # Locks the screen with the image we created
 i3lock -i /tmp/screen_final.png
